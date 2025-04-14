@@ -22,9 +22,9 @@ def generate_pattern():
 
 def generate_puzzles():
     puzzles = []
-    for day in range(1, num_puzzles + 1):
+    for n in range(1, num_puzzles + 1):
         puzzle = {
-            "day": day,
+            "id": n,
             "pattern": generate_pattern()
         }
         puzzles.append(puzzle)
